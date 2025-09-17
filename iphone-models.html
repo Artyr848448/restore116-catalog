@@ -131,7 +131,21 @@
             });
 
             // Создаем карточки поколений, сортируем по убыванию (16, 15, 14...)
-            const sortedGenerations = Object.entries(generations).sort(([a], [b]) => parseInt(b) - parseInt(a));
+            console.log('До сортировки:', Object.keys(generations));
+            const sortedGenerations = Object.entries(generations).sort(([a], [b]) => {
+                const numA = parseInt(a);
+                const numB = parseInt(b);
+                // Если оба числа, сортируем по убыванию
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    return numB - numA;
+                }
+                // Если одно из них не число, ставим числа в начало
+                if (!isNaN(numA) && isNaN(numB)) return -1;
+                if (isNaN(numA) && !isNaN(numB)) return 1;
+                // Если оба не числа, сортируем по алфавиту
+                return b.localeCompare(a);
+            });
+            console.log('После сортировки:', sortedGenerations.map(([gen]) => gen));
             const generationCards = sortedGenerations.map(([generation, generationProducts]) => {
                 const generationInfo = getGenerationInfo(generation);
                 const uniqueModels = [...new Set(generationProducts.map(p => extractModelName(p.model)))].length;
