@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store - Главная</title>
-    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="stylesheet" href="styles.css?v=999">
     <style>
         @media (max-width: 768px) {
             .container {
                 padding: 0 !important;
+                max-width: 100% !important;
             }
             .categories-grid {
-                grid-template-columns: repeat(2, calc(50% - 6px)) !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
                 gap: 12px !important;
                 padding: 0 !important;
                 margin: 0 16px !important;
@@ -22,7 +24,8 @@
                 padding: 16px 12px !important;
                 border-radius: 8px !important;
                 justify-content: flex-start !important;
-                max-width: 100% !important;
+                width: calc(50% - 6px) !important;
+                flex: 0 0 calc(50% - 6px) !important;
                 box-sizing: border-box !important;
             }
             .category-icon {
