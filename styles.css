@@ -1084,8 +1084,8 @@ body.models-page [id*="search"] {
     }
     
     .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
     }
     
     .category-card {
@@ -1109,8 +1109,8 @@ body.models-page [id*="search"] {
     }
     
     .models-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
     }
     
     .model-card {
@@ -1134,8 +1134,8 @@ body.models-page [id*="search"] {
     }
     
     .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
     }
     
     .product-card {
@@ -1305,3 +1305,4 @@ select:focus {
         --text-secondary: #000000;
     }
 }
+/* Force cache refresh */
