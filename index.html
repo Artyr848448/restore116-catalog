@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store - Главная</title>
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=4">
     <style>
         @media (max-width: 768px) {
             .categories-grid {
@@ -196,21 +196,36 @@
                 
                 return `
                     <div class="category-card" onclick="openCategory('${categoryName}')">
-                        <div class="category-icon">${categoryInfo.icon}</div>
-                        <h3 class="category-name">${categoryInfo.name}</h3>
-                        <p class="category-description">${categoryInfo.description}</p>
-                        <div class="category-details">${categoryInfo.details}</div>
-                        <div class="category-features">
-                            ${categoryInfo.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                        <div class="category-header">
+                            <div class="category-icon">${categoryInfo.icon}</div>
+                            <div class="category-title-section">
+                                <h3 class="category-name">${categoryInfo.name}</h3>
+                                <p class="category-description">${categoryInfo.description}</p>
+                            </div>
                         </div>
-                        <div class="category-stats">
-                            <span class="stat">${categoryProducts.length} товаров</span>
-                            <span class="stat">${uniqueModels} моделей</span>
+                        <div class="category-content">
+                            <div class="category-features">
+                                ${categoryInfo.features.slice(0, 3).map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                            </div>
+                            <div class="category-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">${categoryProducts.length}</span>
+                                    <span class="stat-label">товаров</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">${uniqueModels}</span>
+                                    <span class="stat-label">моделей</span>
+                                </div>
+                            </div>
+                            <div class="category-price-range">
+                                ${getPriceRange(categoryProducts)}
+                            </div>
                         </div>
-                        <div class="category-price-range">
-                            ${getPriceRange(categoryProducts)}
+                        <div class="category-arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M6.22 4.22a.75.75 0 0 1 1.06 0L10.94 8l-3.66 3.78a.75.75 0 1 1-1.06-1.06L8.88 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"/>
+                            </svg>
                         </div>
-                        <div class="category-arrow">→</div>
                     </div>
                 `;
             });
