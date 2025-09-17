@@ -390,5 +390,87 @@
     </script>
     <script src="mobile-menu-helper.js"></script>
     <script src="premium-effects.js"></script>
+    <script>
+        // Принудительно применяем мобильные стили для моделей
+        function applyMobileModelStyles() {
+            if (window.innerWidth <= 768) {
+                const modelsGrid = document.querySelector('.models-grid');
+                if (modelsGrid) {
+                    modelsGrid.style.setProperty('grid-template-columns', 'repeat(2, 1fr)', 'important');
+                    modelsGrid.style.setProperty('gap', '15px', 'important');
+                }
+                
+                const modelCards = document.querySelectorAll('.model-card');
+                modelCards.forEach(card => {
+                    card.style.setProperty('padding', '20px 15px', 'important');
+                    card.style.setProperty('min-height', '140px', 'important');
+                });
+                
+                const modelIcons = document.querySelectorAll('.model-icon');
+                modelIcons.forEach(icon => {
+                    icon.style.setProperty('font-size', '2.5rem', 'important');
+                    icon.style.setProperty('margin-bottom', '10px', 'important');
+                });
+                
+                const modelTitles = document.querySelectorAll('.model-title');
+                modelTitles.forEach(title => {
+                    title.style.setProperty('font-size', '1.1rem', 'important');
+                    title.style.setProperty('margin-bottom', '8px', 'important');
+                });
+                
+                const modelDescriptions = document.querySelectorAll('.model-description');
+                modelDescriptions.forEach(desc => {
+                    desc.style.setProperty('font-size', '0.8rem', 'important');
+                    desc.style.setProperty('line-height', '1.3', 'important');
+                });
+            }
+        }
+
+        // Функция для сортировки элементов в правильном порядке
+        function sortModelCards() {
+            const modelsGrid = document.getElementById('models-grid');
+            if (!modelsGrid) return;
+            
+            const cards = Array.from(modelsGrid.children);
+            
+            // Сортируем карточки по номеру поколения в убывающем порядке
+            cards.sort((a, b) => {
+                const titleA = a.querySelector('.model-name');
+                const titleB = b.querySelector('.model-name');
+                
+                if (!titleA || !titleB) return 0;
+                
+                const matchA = titleA.textContent.match(/iPhone (\d+)/);
+                const matchB = titleB.textContent.match(/iPhone (\d+)/);
+                
+                if (matchA && matchB) {
+                    const numA = parseInt(matchA[1]);
+                    const numB = parseInt(matchB[1]);
+                    return numB - numA; // Убывающий порядок (16, 15, 14...)
+                }
+                
+                return 0;
+            });
+            
+            // Переставляем элементы в правильном порядке
+            cards.forEach(card => modelsGrid.appendChild(card));
+        }
+
+        // Применяем стили при загрузке и изменении размера окна
+        document.addEventListener('DOMContentLoaded', () => {
+            applyMobileModelStyles();
+            sortModelCards();
+        });
+        window.addEventListener('resize', () => {
+            applyMobileModelStyles();
+            sortModelCards();
+        });
+        
+        // Применяем стили каждые 100ms для надежности
+        setInterval(() => {
+            applyMobileModelStyles();
+            sortModelCards();
+        }, 100);
+    </script>
 </body>
 </html>
