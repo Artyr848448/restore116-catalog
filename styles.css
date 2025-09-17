@@ -428,6 +428,7 @@ body {
     color: var(--text-primary);
     line-height: 1.2;
     letter-spacing: -0.003em;
+    text-align: center;
 }
 
 .category-description {
@@ -436,12 +437,14 @@ body {
     line-height: 1.4;
     margin-bottom: 16px;
     font-weight: 400;
+    text-align: center;
 }
 
 .category-price-range {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--primary-color);
+    text-align: center;
 }
 
 
@@ -1027,16 +1030,19 @@ body.models-page [id*="search"] {
     .category-name {
         font-size: 1.1rem;
         margin-bottom: 4px;
+        text-align: center;
     }
     
     .category-description {
         font-size: 0.75rem;
         line-height: 1.2;
         margin-bottom: 8px;
+        text-align: center;
     }
     
     .category-price-range {
         font-size: 0.8rem;
+        text-align: center;
     }
     
     .category-details {
@@ -1240,16 +1246,19 @@ body.models-page [id*="search"] {
     .category-name {
         font-size: 1rem;
         margin-bottom: 3px;
+        text-align: center;
     }
     
     .category-description {
         font-size: 0.7rem;
         line-height: 1.1;
         margin-bottom: 6px;
+        text-align: center;
     }
     
     .category-price-range {
         font-size: 0.75rem;
+        text-align: center;
     }
     
     .model-card,
