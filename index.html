@@ -297,5 +297,48 @@
         }
     </script>
     <script src="premium-effects.js"></script>
+    <script>
+        // Принудительно применяем мобильные стили
+        function applyMobileStyles() {
+            if (window.innerWidth <= 768) {
+                const categoriesGrid = document.querySelector('.categories-grid');
+                if (categoriesGrid) {
+                    categoriesGrid.style.setProperty('grid-template-columns', 'repeat(2, 1fr)', 'important');
+                    categoriesGrid.style.setProperty('gap', '15px', 'important');
+                }
+                
+                const categoryCards = document.querySelectorAll('.category-card');
+                categoryCards.forEach(card => {
+                    card.style.setProperty('padding', '20px 15px', 'important');
+                    card.style.setProperty('min-height', '120px', 'important');
+                });
+                
+                const categoryIcons = document.querySelectorAll('.category-icon');
+                categoryIcons.forEach(icon => {
+                    icon.style.setProperty('font-size', '2.5rem', 'important');
+                    icon.style.setProperty('margin-bottom', '10px', 'important');
+                });
+                
+                const categoryTitles = document.querySelectorAll('.category-title');
+                categoryTitles.forEach(title => {
+                    title.style.setProperty('font-size', '1.2rem', 'important');
+                    title.style.setProperty('margin-bottom', '8px', 'important');
+                });
+                
+                const categoryDescriptions = document.querySelectorAll('.category-description');
+                categoryDescriptions.forEach(desc => {
+                    desc.style.setProperty('font-size', '0.8rem', 'important');
+                    desc.style.setProperty('line-height', '1.3', 'important');
+                });
+            }
+        }
+        
+        // Применяем стили при загрузке и изменении размера окна
+        document.addEventListener('DOMContentLoaded', applyMobileStyles);
+        window.addEventListener('resize', applyMobileStyles);
+        
+        // Применяем стили каждые 100ms для надежности
+        setInterval(applyMobileStyles, 100);
+    </script>
 </body>
 </html>

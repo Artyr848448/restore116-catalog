@@ -569,5 +569,58 @@
         }
     </script>
     <script src="premium-effects.js"></script>
+    <script>
+        // Принудительно применяем мобильные стили для товаров
+        function applyMobileProductStyles() {
+            if (window.innerWidth <= 768) {
+                const productsGrid = document.querySelector('.products-grid');
+                if (productsGrid) {
+                    productsGrid.style.setProperty('grid-template-columns', 'repeat(2, 1fr)', 'important');
+                    productsGrid.style.setProperty('gap', '15px', 'important');
+                }
+                
+                const productCards = document.querySelectorAll('.product-card');
+                productCards.forEach(card => {
+                    card.style.setProperty('padding', '15px', 'important');
+                    card.style.setProperty('min-height', 'auto', 'important');
+                });
+                
+                const productImages = document.querySelectorAll('.product-image');
+                productImages.forEach(img => {
+                    img.style.setProperty('width', '50px', 'important');
+                    img.style.setProperty('height', '50px', 'important');
+                    img.style.setProperty('margin-bottom', '10px', 'important');
+                });
+                
+                const productNames = document.querySelectorAll('.product-name');
+                productNames.forEach(name => {
+                    name.style.setProperty('font-size', '0.9rem', 'important');
+                    name.style.setProperty('line-height', '1.2', 'important');
+                    name.style.setProperty('margin-bottom', '8px', 'important');
+                });
+                
+                const specBadges = document.querySelectorAll('.spec-badge');
+                specBadges.forEach(badge => {
+                    badge.style.setProperty('font-size', '0.6rem', 'important');
+                    badge.style.setProperty('padding', '3px 6px', 'important');
+                    badge.style.setProperty('margin', '2px', 'important');
+                });
+                
+                const buyButtons = document.querySelectorAll('.buy-button');
+                buyButtons.forEach(btn => {
+                    btn.style.setProperty('padding', '8px 16px', 'important');
+                    btn.style.setProperty('font-size', '0.8rem', 'important');
+                    btn.style.setProperty('width', '100%', 'important');
+                });
+            }
+        }
+        
+        // Применяем стили при загрузке и изменении размера окна
+        document.addEventListener('DOMContentLoaded', applyMobileProductStyles);
+        window.addEventListener('resize', applyMobileProductStyles);
+        
+        // Применяем стили каждые 100ms для надежности
+        setInterval(applyMobileProductStyles, 100);
+    </script>
 </body>
 </html>

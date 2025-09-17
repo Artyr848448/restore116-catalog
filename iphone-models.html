@@ -130,8 +130,9 @@
                 generations[generation].push(product);
             });
 
-            // Создаем карточки поколений
-            const generationCards = Object.entries(generations).map(([generation, generationProducts]) => {
+            // Создаем карточки поколений, сортируем по убыванию (16, 15, 14...)
+            const sortedGenerations = Object.entries(generations).sort(([a], [b]) => parseInt(b) - parseInt(a));
+            const generationCards = sortedGenerations.map(([generation, generationProducts]) => {
                 const generationInfo = getGenerationInfo(generation);
                 const uniqueModels = [...new Set(generationProducts.map(p => extractModelName(p.model)))].length;
                 const priceRange = getPriceRange(generationProducts);
