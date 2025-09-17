@@ -4,7 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store - Каталог товаров</title>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <style>
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px !important;
+            }
+            .product-card {
+                padding: 15px !important;
+                min-height: auto !important;
+            }
+            .product-image {
+                width: 50px !important;
+                height: 50px !important;
+                margin-bottom: 10px !important;
+            }
+            .product-name {
+                font-size: 0.9rem !important;
+                line-height: 1.2 !important;
+                margin-bottom: 8px !important;
+            }
+            .product-category {
+                font-size: 0.7rem !important;
+                margin-bottom: 5px !important;
+            }
+            .product-brand {
+                font-size: 0.7rem !important;
+                margin-bottom: 8px !important;
+            }
+            .spec-badge {
+                font-size: 0.6rem !important;
+                padding: 3px 6px !important;
+                margin: 2px !important;
+            }
+            .product-price {
+                font-size: 1rem !important;
+                margin-bottom: 8px !important;
+            }
+            .price-main {
+                font-size: 1rem !important;
+            }
+            .price-monthly {
+                font-size: 0.7rem !important;
+            }
+            .guarantee-badge {
+                font-size: 0.6rem !important;
+                padding: 3px 6px !important;
+                margin: 2px !important;
+            }
+            .buy-button {
+                padding: 8px 16px !important;
+                font-size: 0.8rem !important;
+                width: 100% !important;
+            }
+        }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#0071e3">
     <meta name="apple-mobile-web-app-capable" content="yes">
