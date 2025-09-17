@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Store - Главная</title>
-    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="styles.css?v=13">
     <style>
         @media (max-width: 768px) {
+            .container {
+                padding: 0 !important;
+            }
             .categories-grid {
                 grid-template-columns: repeat(2, 1fr) !important;
                 gap: 12px !important;
                 padding: 0 !important;
                 margin: 0 16px !important;
+                width: calc(100% - 32px) !important;
             }
             .category-card {
                 height: 140px !important;
@@ -41,11 +45,15 @@
         }
         
         @media (max-width: 480px) {
+            .container {
+                padding: 0 !important;
+            }
             .categories-grid {
                 grid-template-columns: 1fr !important;
                 gap: 10px !important;
                 padding: 0 !important;
                 margin: 0 12px !important;
+                width: calc(100% - 24px) !important;
             }
             .category-card {
                 height: 120px !important;
