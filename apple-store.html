@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store - Каталог товаров</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0071e3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <span>RESTORE116</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="apple-store.html" class="nav-link active">Все товары</a>
+                    <a href="headphones-models.html" class="nav-link">Наушники</a>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="apple-store.html" class="nav-link active">Все товары</a>
+        <a href="iphone-models.html" class="nav-link">iPhone</a>
+        <a href="ipad-models.html" class="nav-link">iPad</a>
+        <a href="mac-models.html" class="nav-link">Mac</a>
+        <a href="headphones-models.html" class="nav-link">Наушники</a>
+        <a href="accessories-models.html" class="nav-link">Аксессуары</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Новейшие iPhone</h1>
+            <p class="hero-subtitle">Откройте для себя полную линейку iPhone с передовыми технологиями</p>
+        </div>
+    </section>
+
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div id="products-grid" class="products-grid">
+                <!-- Products will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Продукты</h3>
+                    <ul>
+                        <li><a href="#iphones">iPhone</a></li>
+                        <li><a href="#ipads">iPad</a></li>
+                        <li><a href="#macs">Mac</a></li>
+                        <li><a href="#accessories">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#help">Помощь</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#warranty">Гарантия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#careers">Карьера</a></li>
+                        <li><a href="#news">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apple Store. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="excel-reader.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Загрузка данных при инициализации страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            initMobileMenu();
+            // Показываем загрузку
+            const productsGrid = document.getElementById('products-grid');
+            productsGrid.innerHTML = '<div class="loading">Загрузка товаров...</div>';
+            
+            // Проверяем, есть ли фильтры в URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryFilter = urlParams.get('category');
+            const modelFilter = urlParams.get('model');
+            const generationFilter = urlParams.get('generation');
+            const typeFilter = urlParams.get('type');
+            
+            if (categoryFilter) {
+                console.log('🔍 Фильтр по категории:', categoryFilter);
+                // Обновляем заголовок страницы
+                const heroTitle = document.querySelector('.hero-title');
+                const heroSubtitle = document.querySelector('.hero-subtitle');
+                if (heroTitle) heroTitle.textContent = categoryFilter;
+                if (heroSubtitle) {
+                    if (generationFilter) {
+                        heroSubtitle.textContent = `iPhone ${generationFilter} - все модели`;
+                    } else if (typeFilter) {
+                        heroSubtitle.textContent = `${typeFilter} - все модели`;
+                    } else if (modelFilter) {
+                        heroSubtitle.textContent = `Модель ${modelFilter}`;
+                    } else {
+                        heroSubtitle.textContent = `Все товары категории ${categoryFilter}`;
+                    }
+                }
+            }
+            
+            // Проверяем, есть ли данные в localStorage (из загрузчика Excel)
+            const savedProducts = localStorage.getItem('appleStoreProducts');
+            
+            if (savedProducts) {
+                try {
+                    const products = JSON.parse(savedProducts);
+                    console.log('Данные загружены из localStorage:', products);
+                    updateProductsFromExcel(products);
+                    showMessage('✅ Данные загружены из Excel файла!', 'success');
+                } catch (error) {
+                    console.error('Ошибка при загрузке данных из localStorage:', error);
+                    loadDemoData();
+                }
+            } else {
+                // Пытаемся загрузить данные из JSON файла
+                console.log('🔄 Загружаем данные из products.json...');
+                fetch('products.json?' + Date.now()) // Добавляем timestamp для обхода кэша
+                    .then(response => {
+                        console.log('📡 Ответ сервера:', response.status);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(products => {
+                        console.log('✅ Данные загружены из JSON:', products.length, 'товаров');
+                        console.log('📱 Первые 3 товара:', products.slice(0, 3));
+                        
+                        // Обновляем глобальные переменные
+                        if (typeof window !== 'undefined') {
+                            console.log('🔄 Обновляем глобальные переменные...');
+                            window.productsData = products;
+                            
+                            // Применяем фильтры, если есть
+                            let filteredProducts = [...products];
+                            if (categoryFilter) {
+                                filteredProducts = filteredProducts.filter(product => 
+                                    product.category === categoryFilter
+                                );
+                                console.log(`🔍 Отфильтровано по категории "${categoryFilter}":`, filteredProducts.length, 'товаров');
+                            }
+                            
+                            if (generationFilter) {
+                                filteredProducts = filteredProducts.filter(product => 
+                                    product.model.includes(`iPhone ${generationFilter}`)
+                                );
+                                console.log(`🔍 Отфильтровано по поколению "${generationFilter}":`, filteredProducts.length, 'товаров');
+                            }
+                            
+                            if (typeFilter) {
+                                filteredProducts = filteredProducts.filter(product => 
+                                    product.model.includes(typeFilter)
+                                );
+                                console.log(`🔍 Отфильтровано по типу "${typeFilter}":`, filteredProducts.length, 'товаров');
+                            }
+                            
+                            if (modelFilter) {
+                                filteredProducts = filteredProducts.filter(product => 
+                                    product.model.includes(modelFilter)
+                                );
+                                console.log(`🔍 Отфильтровано по модели "${modelFilter}":`, filteredProducts.length, 'товаров');
+                            }
+                            
+                            window.filteredProducts = filteredProducts;
+                            
+                            console.log('📊 productsData обновлен:', window.productsData.length, 'товаров');
+                            console.log('📊 filteredProducts обновлен:', window.filteredProducts.length, 'товаров');
+                            
+                            
+                            // Перерисовываем товары
+                            console.log('🎨 Перерисовываем товары...');
+                            if (typeof window.renderProducts === 'function') {
+                                console.log('✅ Функция renderProducts найдена, вызываем...');
+                                window.renderProducts();
+                                console.log('✅ renderProducts вызвана');
+                            } else {
+                                console.error('❌ Функция renderProducts не найдена!');
+                            }
+                        }
+                        
+                        showMessage(`✅ Загружено ${products.length} товаров из CSV файлов!`, 'success');
+                    })
+                    .catch(error => {
+                        console.error('❌ Ошибка загрузки JSON:', error);
+                        showMessage('❌ Ошибка загрузки данных. Используем демо-данные.', 'error');
+                        loadDemoData();
+                    });
+            }
+        });
+        
+        function loadDemoData() {
+            // Используем демо-данные из script.js
+            setTimeout(() => {
+                renderProducts();
+                showMessage('ℹ️ Используются демо-данные. Для загрузки ваших данных используйте <a href="excel-uploader.html" style="color: #0071e3;">загрузчик Excel</a>', 'info');
+            }, 1000);
+        }
+        
+        // Функция для отрисовки товаров
+        function renderProducts() {
+            console.log('🎨 renderProducts вызвана');
+            const productsGrid = document.getElementById('products-grid');
+            
+            if (!productsGrid) {
+                console.error('❌ Элемент products-grid не найден!');
+                return;
+            }
+            
+            if (!window.filteredProducts || window.filteredProducts.length === 0) {
+                console.log('⚠️ Нет товаров для отображения');
+                productsGrid.innerHTML = `
+                    <div class="empty-state">
+                        <h3>Товары не найдены</h3>
+                        <p>Попробуйте изменить параметры фильтрации</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            console.log('📱 Отрисовываем', window.filteredProducts.length, 'товаров');
+            
+                productsGrid.innerHTML = window.filteredProducts.map(product => {
+                    // Убираем дублирование в названии модели
+                    const cleanModel = product.model.replace(/(\w+)\s+\1/g, '$1');
+                    const monthlyPrice = Math.round(product.price / 24);
+                    const colorStyle = getColorStyle(product.color);
+                    
+                    return `
+                        <div class="product-card" data-category="${product.category}">
+                            <div class="product-image">
+                                ${getProductIcon(product.category)}
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">${product.category}</div>
+                                <h3 class="product-name">${cleanModel}</h3>
+                                <div class="product-brand">${product.brand}</div>
+                                <div class="product-specs">
+                                    <span class="spec-badge color" style="background: linear-gradient(135deg, ${getColorForBadge(product.color)}) !important; color: ${getTextColorForBadge(product.color)} !important; font-weight: 600 !important; text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important; border: 1px solid rgba(255,255,255,0.2) !important; box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;">${product.color}</span>
+                                    <span class="spec-badge">${product.storage}</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="price-main">${product.price.toLocaleString()} ₽</div>
+                                    <div class="price-monthly">от ${monthlyPrice.toLocaleString()} ₽/мес</div>
+                                </div>
+                                <div class="product-guarantee">
+                                    <span class="guarantee-badge">Гарантия 1 год</span>
+                                    <span class="guarantee-badge">Полная комплектация</span>
+                                </div>
+                                <button class="buy-button" onclick="handleBuyClick(${product.id})">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            
+            console.log('✅ Товары отрисованы');
+        }
+        
+        
+        function showMessage(text, type) {
+            // Создаем элемент для сообщения
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 80px;
+                right: 20px;
+                background: ${type === 'success' ? '#eafaf1' : type === 'error' ? '#ffeaea' : '#f0f8ff'};
+                color: ${type === 'success' ? '#30d158' : type === 'error' ? '#ff3b30' : '#0071e3'};
+                padding: 16px 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                z-index: 1001;
+                max-width: 400px;
+                font-size: 14px;
+                line-height: 1.4;
+            `;
+            messageDiv.innerHTML = text;
+            
+            document.body.appendChild(messageDiv);
+            
+            // Убираем сообщение через 5 секунд
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.parentNode.removeChild(messageDiv);
+                }
+            }, 5000);
+        }
+
+        function initMobileMenu() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (burgerMenu && mobileMenu) {
+                burgerMenu.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+
+                // Закрыть меню при клике на ссылку
+                mobileMenu.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', function() {
+                        burgerMenu.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+
+                // Закрыть меню при клике вне его
+                document.addEventListener('click', function(e) {
+                    if (!burgerMenu.contains(e.target) && !mobileMenu.contains(e.target)) {
+                        burgerMenu.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        function getColorStyle(colorName) {
+            const colorMap = {
+                'Черный': 'background: linear-gradient(135deg, #2c2c2c, #1a1a1a); color: #2c2c2c;',
+                'Белый': 'background: linear-gradient(135deg, #ffffff, #f8f8f8); color: #ffffff; border: 1px solid #ddd;',
+                'Серый': 'background: linear-gradient(135deg, #6c757d, #5a6268); color: #6c757d;',
+                'Серебристый': 'background: linear-gradient(135deg, #c0c0c0, #a8a8a8); color: #c0c0c0;',
+                'Золотой': 'background: linear-gradient(135deg, #ffd700, #ffed4e); color: #ffd700;',
+                'Розовый': 'background: linear-gradient(135deg, #ff69b4, #ff1493); color: #ff69b4;',
+                'Синий': 'background: linear-gradient(135deg, #007bff, #0056b3); color: #007bff;',
+                'Красный': 'background: linear-gradient(135deg, #dc3545, #c82333); color: #dc3545;',
+                'Зеленый': 'background: linear-gradient(135deg, #28a745, #1e7e34); color: #28a745;',
+                'Фиолетовый': 'background: linear-gradient(135deg, #6f42c1, #5a32a3); color: #6f42c1;',
+                'Оранжевый': 'background: linear-gradient(135deg, #fd7e14, #e55a00); color: #fd7e14;',
+                'Желтый': 'background: linear-gradient(135deg, #ffc107, #e0a800); color: #ffc107;',
+                'Темно-синий': 'background: linear-gradient(135deg, #1e3a8a, #1e40af); color: #1e3a8a;',
+                'Темно-зеленый': 'background: linear-gradient(135deg, #166534, #15803d); color: #166534;',
+                'Коричневый': 'background: linear-gradient(135deg, #8b4513, #a0522d); color: #8b4513;',
+                'Бирюзовый': 'background: linear-gradient(135deg, #20c997, #17a2b8); color: #20c997;',
+                'Мятный': 'background: linear-gradient(135deg, #6bcf7f, #4ade80); color: #6bcf7f;',
+                'Коралловый': 'background: linear-gradient(135deg, #ff7f7f, #ff6b6b); color: #ff7f7f;',
+                'Лавандовый': 'background: linear-gradient(135deg, #e6e6fa, #d8bfd8); color: #e6e6fa;',
+                'Графитовый': 'background: linear-gradient(135deg, #36454f, #2c3e50); color: #36454f;'
+            };
+            
+            // Ищем точное совпадение или частичное
+            for (const [key, style] of Object.entries(colorMap)) {
+                if (colorName.toLowerCase().includes(key.toLowerCase()) || 
+                    key.toLowerCase().includes(colorName.toLowerCase())) {
+                    return style;
+                }
+            }
+            
+            // Если цвет не найден, используем дефолтный
+            return 'background: linear-gradient(135deg, #6c757d, #5a6268); color: #6c757d;';
+        }
+
+        function getIconFilter(colorName) {
+            const filterMap = {
+                'Черный': 'brightness(0) saturate(100%)',
+                'Белый': 'brightness(0) invert(1)',
+                'Серый': 'brightness(0) saturate(100%) invert(0.4)',
+                'Серебристый': 'brightness(0) saturate(100%) invert(0.7)',
+                'Золотой': 'hue-rotate(45deg) saturate(2) brightness(1.2)',
+                'Розовый': 'hue-rotate(300deg) saturate(2) brightness(1.1)',
+                'Синий': 'hue-rotate(220deg) saturate(2) brightness(1.1)',
+                'Красный': 'hue-rotate(0deg) saturate(2) brightness(1.1)',
+                'Зеленый': 'hue-rotate(120deg) saturate(2) brightness(1.1)',
+                'Фиолетовый': 'hue-rotate(270deg) saturate(2) brightness(1.1)',
+                'Оранжевый': 'hue-rotate(30deg) saturate(2) brightness(1.1)',
+                'Желтый': 'hue-rotate(60deg) saturate(2) brightness(1.2)',
+                'Темно-синий': 'hue-rotate(220deg) saturate(2) brightness(0.7)',
+                'Темно-зеленый': 'hue-rotate(120deg) saturate(2) brightness(0.7)',
+                'Коричневый': 'hue-rotate(30deg) saturate(1.5) brightness(0.6)',
+                'Бирюзовый': 'hue-rotate(180deg) saturate(2) brightness(1.1)',
+                'Мятный': 'hue-rotate(150deg) saturate(2) brightness(1.2)',
+                'Коралловый': 'hue-rotate(15deg) saturate(2) brightness(1.1)',
+                'Лавандовый': 'hue-rotate(280deg) saturate(1.5) brightness(1.3)',
+                'Графитовый': 'brightness(0) saturate(100%) invert(0.2)'
+            };
+            
+            // Ищем точное совпадение или частичное
+            for (const [key, filter] of Object.entries(filterMap)) {
+                if (colorName.toLowerCase().includes(key.toLowerCase()) || 
+                    key.toLowerCase().includes(colorName.toLowerCase())) {
+                    return filter;
+                }
+            }
+            
+            // Если цвет не найден, используем дефолтный
+            return 'brightness(0) saturate(100%) invert(0.4)';
+        }
+
+        function getProductIcon(category) {
+            const iconMap = {
+                'iPhone': '📱',
+                'iPad': '📱',
+                'Mac': '💻',
+                'Наушники': '🎧',
+                'Аксессуары': '⌚'
+            };
+            
+            return iconMap[category] || '📱';
+        }
+
+        function getColorForBadge(colorName) {
+            const colorMap = {
+                'Черный': '#2c2c2c, #1a1a1a',
+                'Белый': '#ffffff, #f8f8f8',
+                'Серый': '#6c757d, #5a6268',
+                'Серебристый': '#c0c0c0, #a8a8a8',
+                'Золотой': '#ffd700, #ffed4e',
+                'Розовый': '#ff69b4, #ff1493',
+                'Синий': '#007bff, #0056b3',
+                'Красный': '#dc3545, #c82333',
+                'Зеленый': '#28a745, #1e7e34',
+                'Фиолетовый': '#6f42c1, #5a32a3',
+                'Оранжевый': '#fd7e14, #e55a00',
+                'Желтый': '#ffc107, #e0a800',
+                'Темно-синий': '#1e3a8a, #1e40af',
+                'Темно-зеленый': '#166534, #15803d',
+                'Коричневый': '#8b4513, #a0522d',
+                'Бирюзовый': '#20c997, #17a2b8',
+                'Мятный': '#6bcf7f, #4ade80',
+                'Коралловый': '#ff7f7f, #ff6b6b',
+                'Лавандовый': '#e6e6fa, #d8bfd8',
+                'Графитовый': '#36454f, #2c3e50'
+            };
+            
+            for (const [key, color] of Object.entries(colorMap)) {
+                if (colorName.toLowerCase().includes(key.toLowerCase()) || 
+                    key.toLowerCase().includes(colorName.toLowerCase())) {
+                    return color;
+                }
+            }
+            
+            return '#6c757d, #5a6268';
+        }
+
+        function getTextColorForBadge(colorName) {
+            const textColorMap = {
+                'Черный': 'white',
+                'Белый': '#333',
+                'Серый': 'white',
+                'Серебристый': '#333',
+                'Золотой': '#333',
+                'Розовый': 'white',
+                'Синий': 'white',
+                'Красный': 'white',
+                'Зеленый': 'white',
+                'Фиолетовый': 'white',
+                'Оранжевый': 'white',
+                'Желтый': '#333',
+                'Темно-синий': 'white',
+                'Темно-зеленый': 'white',
+                'Коричневый': 'white',
+                'Бирюзовый': 'white',
+                'Мятный': 'white',
+                'Коралловый': 'white',
+                'Лавандовый': '#333',
+                'Графитовый': 'white'
+            };
+            
+            for (const [key, color] of Object.entries(textColorMap)) {
+                if (colorName.toLowerCase().includes(key.toLowerCase()) || 
+                    key.toLowerCase().includes(colorName.toLowerCase())) {
+                    return color;
+                }
+            }
+            
+            return 'white';
+        }
+
+        function handleBuyClick(productId) {
+            const product = window.products.find(p => p.id === productId);
+            if (product) {
+                alert(`Вы выбрали: ${product.model} - ${product.price.toLocaleString()} ₽`);
+            }
+        }
+    </script>
+    <script src="premium-effects.js"></script>
+</body>
+</html>

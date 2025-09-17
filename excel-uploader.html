@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка данных из Excel</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f7;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1d1d1f;
+            margin-bottom: 20px;
+        }
+        .upload-area {
+            border: 2px dashed #d2d2d7;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            transition: border-color 0.3s ease;
+        }
+        .upload-area:hover {
+            border-color: #0071e3;
+        }
+        .upload-area.dragover {
+            border-color: #0071e3;
+            background: #f0f8ff;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            background: #0071e3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #0077ed;
+        }
+        .preview {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f5f5f7;
+            border-radius: 8px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .product-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #0071e3;
+        }
+        .error {
+            color: #ff3b30;
+            background: #ffeaea;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .success {
+            color: #30d158;
+            background: #eafaf1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Загрузка данных из Excel</h1>
+        <p>Загрузите ваш Excel файл "Айфоны Матрица.xlsx" для конвертации в JSON формат.</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <p>📁 Перетащите Excel файл сюда или нажмите для выбора</p>
+            <input type="file" id="fileInput" accept=".xlsx,.xls" />
+        </div>
+        
+        <div style="text-align: center;">
+            <button onclick="processFile()">🔄 Обработать файл</button>
+            <button onclick="downloadJSON()" id="downloadBtn" style="display: none;">💾 Скачать JSON</button>
+            <button onclick="goToStore()" id="goToStoreBtn" style="display: none;">🏪 Перейти в магазин</button>
+        </div>
+        
+        <div id="message"></div>
+        <div id="preview" class="preview" style="display: none;"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        let processedData = [];
+        
+        // Drag and drop functionality
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                fileInput.files = files;
+                processFile();
+            }
+        });
+        
+        function processFile() {
+            const file = fileInput.files[0];
+            if (!file) {
+                showMessage('Пожалуйста, выберите файл', 'error');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    const sheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[sheetName];
+                    const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+                    
+                    // Конвертируем в нужный формат
+                    processedData = convertToProducts(jsonData);
+                    
+                    if (processedData.length > 0) {
+                        showMessage(`✅ Успешно обработано ${processedData.length} товаров!`, 'success');
+                        showPreview(processedData);
+                        document.getElementById('downloadBtn').style.display = 'inline-block';
+                        document.getElementById('goToStoreBtn').style.display = 'inline-block';
+                    } else {
+                        showMessage('❌ Не удалось найти данные в файле', 'error');
+                    }
+                } catch (error) {
+                    showMessage(`❌ Ошибка при обработке файла: ${error.message}`, 'error');
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        }
+        
+        function convertToProducts(excelData) {
+            const products = [];
+            
+            // Пропускаем заголовки (первая строка)
+            for (let i = 1; i < excelData.length; i++) {
+                const row = excelData[i];
+                
+                if (row && row.length >= 6) {
+                    const product = {
+                        id: i,
+                        model: row[0] ? String(row[0]).trim() : '',
+                        brand: row[1] ? String(row[1]).trim() : 'Apple',
+                        category: row[2] ? String(row[2]).trim() : '',
+                        price: parseFloat(row[3]) || 0,
+                        color: row[4] ? String(row[4]).trim() : '',
+                        storage: row[5] ? `${row[5]} ГБ` : 'N/A'
+                    };
+                    
+                    // Добавляем только если есть основные данные
+                    if (product.model && product.category) {
+                        products.push(product);
+                    }
+                }
+            }
+            
+            return products;
+        }
+        
+        function showMessage(text, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = `<div class="${type}">${text}</div>`;
+        }
+        
+        function showPreview(products) {
+            const previewDiv = document.getElementById('preview');
+            previewDiv.style.display = 'block';
+            previewDiv.innerHTML = '<h3>📋 Предварительный просмотр товаров:</h3>';
+            
+            products.slice(0, 10).forEach(product => {
+                previewDiv.innerHTML += `
+                    <div class="product-item">
+                        <strong>${product.model}</strong> - ${product.price.toLocaleString()} ₽<br>
+                        <small>${product.category} • ${product.color} • ${product.storage}</small>
+                    </div>
+                `;
+            });
+            
+            if (products.length > 10) {
+                previewDiv.innerHTML += `<p>... и еще ${products.length - 10} товаров</p>`;
+            }
+        }
+        
+        function downloadJSON() {
+            const dataStr = JSON.stringify(processedData, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'products.json';
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        function goToStore() {
+            // Сохраняем данные в localStorage для использования в основном магазине
+            localStorage.setItem('appleStoreProducts', JSON.stringify(processedData));
+            window.location.href = 'apple-store.html';
+        }
+    </script>
+</body>
+</html>

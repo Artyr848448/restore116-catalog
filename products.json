@@ -1,0 +1,3962 @@
+[
+  {
+    "id": 1,
+    "model": "iPhone 11 11 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 19665,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 2,
+    "model": "iPhone 11 11 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 19665,
+    "color": "Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 3,
+    "model": "iPhone 11 11 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 19665,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 4,
+    "model": "iPhone 11 11 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 19665,
+    "color": "Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 5,
+    "model": "iPhone 11 11 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 19665,
+    "color": "White",
+    "storage": "128GB"
+  },
+  {
+    "id": 6,
+    "model": "iPhone 11 11 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 19665,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 7,
+    "model": "iPhone 11 11 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24560,
+    "color": "(PRODUCT)RED",
+    "storage": "256GB"
+  },
+  {
+    "id": 8,
+    "model": "iPhone 11 11 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24560,
+    "color": "Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 9,
+    "model": "iPhone 11 11 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24560,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 10,
+    "model": "iPhone 11 11 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24560,
+    "color": "Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 11,
+    "model": "iPhone 11 11 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24560,
+    "color": "White",
+    "storage": "256GB"
+  },
+  {
+    "id": 12,
+    "model": "iPhone 11 11 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24560,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 13,
+    "model": "iPhone 11 11 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 17724,
+    "color": "(PRODUCT)RED",
+    "storage": "64GB"
+  },
+  {
+    "id": 14,
+    "model": "iPhone 11 11 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 17724,
+    "color": "Black",
+    "storage": "64GB"
+  },
+  {
+    "id": 15,
+    "model": "iPhone 11 11 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 17724,
+    "color": "Green",
+    "storage": "64GB"
+  },
+  {
+    "id": 16,
+    "model": "iPhone 11 11 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 17724,
+    "color": "Purple",
+    "storage": "64GB"
+  },
+  {
+    "id": 17,
+    "model": "iPhone 11 11 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 17724,
+    "color": "White",
+    "storage": "64GB"
+  },
+  {
+    "id": 18,
+    "model": "iPhone 11 11 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 17724,
+    "color": "Yellow",
+    "storage": "64GB"
+  },
+  {
+    "id": 19,
+    "model": "iPhone 12 12 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 20,
+    "model": "iPhone 12 12 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 21,
+    "model": "iPhone 12 12 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 22,
+    "model": "iPhone 12 12 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 23,
+    "model": "iPhone 12 12 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 24,
+    "model": "iPhone 12 12 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "White",
+    "storage": "128GB"
+  },
+  {
+    "id": 25,
+    "model": "iPhone 12 12 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "(PRODUCT)RED",
+    "storage": "256GB"
+  },
+  {
+    "id": 26,
+    "model": "iPhone 12 12 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 27,
+    "model": "iPhone 12 12 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 28,
+    "model": "iPhone 12 12 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 29,
+    "model": "iPhone 12 12 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 30,
+    "model": "iPhone 12 12 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "White",
+    "storage": "256GB"
+  },
+  {
+    "id": 31,
+    "model": "iPhone 12 12 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "(PRODUCT)RED",
+    "storage": "64GB"
+  },
+  {
+    "id": 32,
+    "model": "iPhone 12 12 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Black",
+    "storage": "64GB"
+  },
+  {
+    "id": 33,
+    "model": "iPhone 12 12 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Blue",
+    "storage": "64GB"
+  },
+  {
+    "id": 34,
+    "model": "iPhone 12 12 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Green",
+    "storage": "64GB"
+  },
+  {
+    "id": 35,
+    "model": "iPhone 12 12 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Purple",
+    "storage": "64GB"
+  },
+  {
+    "id": 36,
+    "model": "iPhone 12 12 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "White",
+    "storage": "64GB"
+  },
+  {
+    "id": 37,
+    "model": "iPhone 12 12 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 38,
+    "model": "iPhone 12 12 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 39,
+    "model": "iPhone 12 12 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 40,
+    "model": "iPhone 12 12 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 41,
+    "model": "iPhone 12 12 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 42,
+    "model": "iPhone 12 12 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 24645,
+    "color": "White",
+    "storage": "128GB"
+  },
+  {
+    "id": 43,
+    "model": "iPhone 12 12 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "(PRODUCT)RED",
+    "storage": "256GB"
+  },
+  {
+    "id": 44,
+    "model": "iPhone 12 12 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 45,
+    "model": "iPhone 12 12 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 46,
+    "model": "iPhone 12 12 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 47,
+    "model": "iPhone 12 12 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 48,
+    "model": "iPhone 12 12 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 34435,
+    "color": "White",
+    "storage": "256GB"
+  },
+  {
+    "id": 49,
+    "model": "iPhone 12 12 mini 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "(PRODUCT)RED",
+    "storage": "64GB"
+  },
+  {
+    "id": 50,
+    "model": "iPhone 12 12 mini 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Black",
+    "storage": "64GB"
+  },
+  {
+    "id": 51,
+    "model": "iPhone 12 12 mini 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Blue",
+    "storage": "64GB"
+  },
+  {
+    "id": 52,
+    "model": "iPhone 12 12 mini 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Green",
+    "storage": "64GB"
+  },
+  {
+    "id": 53,
+    "model": "iPhone 12 12 mini 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "Purple",
+    "storage": "64GB"
+  },
+  {
+    "id": 54,
+    "model": "iPhone 12 12 mini 64GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 22619,
+    "color": "White",
+    "storage": "64GB"
+  },
+  {
+    "id": 55,
+    "model": "iPhone 13 13 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 56,
+    "model": "iPhone 13 13 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 57,
+    "model": "iPhone 13 13 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 58,
+    "model": "iPhone 13 13 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Midnight",
+    "storage": "128GB"
+  },
+  {
+    "id": 59,
+    "model": "iPhone 13 13 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Pink",
+    "storage": "128GB"
+  },
+  {
+    "id": 60,
+    "model": "iPhone 13 13 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 61,
+    "model": "iPhone 13 13 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "(PRODUCT)RED",
+    "storage": "256GB"
+  },
+  {
+    "id": 62,
+    "model": "iPhone 13 13 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 63,
+    "model": "iPhone 13 13 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 64,
+    "model": "iPhone 13 13 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Midnight",
+    "storage": "256GB"
+  },
+  {
+    "id": 65,
+    "model": "iPhone 13 13 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 66,
+    "model": "iPhone 13 13 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Starlight",
+    "storage": "256GB"
+  },
+  {
+    "id": 67,
+    "model": "iPhone 13 13 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "(PRODUCT)RED",
+    "storage": "512GB"
+  },
+  {
+    "id": 68,
+    "model": "iPhone 13 13 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 69,
+    "model": "iPhone 13 13 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 70,
+    "model": "iPhone 13 13 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 71,
+    "model": "iPhone 13 13 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 72,
+    "model": "iPhone 13 13 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 73,
+    "model": "iPhone 13 13 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 74,
+    "model": "iPhone 13 13 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 75,
+    "model": "iPhone 13 13 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 76,
+    "model": "iPhone 13 13 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Midnight",
+    "storage": "128GB"
+  },
+  {
+    "id": 77,
+    "model": "iPhone 13 13 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Pink",
+    "storage": "128GB"
+  },
+  {
+    "id": 78,
+    "model": "iPhone 13 13 mini 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 32494,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 79,
+    "model": "iPhone 13 13 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "(PRODUCT)RED",
+    "storage": "256GB"
+  },
+  {
+    "id": 80,
+    "model": "iPhone 13 13 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 81,
+    "model": "iPhone 13 13 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 82,
+    "model": "iPhone 13 13 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Midnight",
+    "storage": "256GB"
+  },
+  {
+    "id": 83,
+    "model": "iPhone 13 13 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 84,
+    "model": "iPhone 13 13 mini 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 37389,
+    "color": "Starlight",
+    "storage": "256GB"
+  },
+  {
+    "id": 85,
+    "model": "iPhone 13 13 mini 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "(PRODUCT)RED",
+    "storage": "512GB"
+  },
+  {
+    "id": 86,
+    "model": "iPhone 13 13 mini 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 87,
+    "model": "iPhone 13 13 mini 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 88,
+    "model": "iPhone 13 13 mini 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 89,
+    "model": "iPhone 13 13 mini 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 90,
+    "model": "iPhone 13 13 mini 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 40259,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 91,
+    "model": "iPhone 13 Pro 13 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Alpine Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 92,
+    "model": "iPhone 13 Pro 13 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Gold",
+    "storage": "128GB"
+  },
+  {
+    "id": 93,
+    "model": "iPhone 13 Pro 13 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Graphite",
+    "storage": "128GB"
+  },
+  {
+    "id": 94,
+    "model": "iPhone 13 Pro 13 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Sierra Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 95,
+    "model": "iPhone 13 Pro 13 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Silver",
+    "storage": "128GB"
+  },
+  {
+    "id": 96,
+    "model": "iPhone 13 Pro 13 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 55029,
+    "color": "Alpine Green",
+    "storage": "1TB"
+  },
+  {
+    "id": 97,
+    "model": "iPhone 13 Pro 13 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 55029,
+    "color": "Gold",
+    "storage": "1TB"
+  },
+  {
+    "id": 98,
+    "model": "iPhone 13 Pro 13 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 55029,
+    "color": "Graphite",
+    "storage": "1TB"
+  },
+  {
+    "id": 99,
+    "model": "iPhone 13 Pro 13 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 55029,
+    "color": "Sierra Blue",
+    "storage": "1TB"
+  },
+  {
+    "id": 100,
+    "model": "iPhone 13 Pro 13 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 55029,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 101,
+    "model": "iPhone 13 Pro 13 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49205,
+    "color": "Alpine Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 102,
+    "model": "iPhone 13 Pro 13 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49205,
+    "color": "Gold",
+    "storage": "256GB"
+  },
+  {
+    "id": 103,
+    "model": "iPhone 13 Pro 13 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49205,
+    "color": "Graphite",
+    "storage": "256GB"
+  },
+  {
+    "id": 104,
+    "model": "iPhone 13 Pro 13 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49205,
+    "color": "Sierra Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 105,
+    "model": "iPhone 13 Pro 13 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49205,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 106,
+    "model": "iPhone 13 Pro 13 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 51146,
+    "color": "Alpine Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 107,
+    "model": "iPhone 13 Pro 13 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 51146,
+    "color": "Gold",
+    "storage": "512GB"
+  },
+  {
+    "id": 108,
+    "model": "iPhone 13 Pro 13 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 51146,
+    "color": "Graphite",
+    "storage": "512GB"
+  },
+  {
+    "id": 109,
+    "model": "iPhone 13 Pro 13 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 51146,
+    "color": "Sierra Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 110,
+    "model": "iPhone 13 Pro 13 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 51146,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 111,
+    "model": "iPhone 13 Pro 13 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 46251,
+    "color": "Alpine Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 112,
+    "model": "iPhone 13 Pro 13 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 46251,
+    "color": "Gold",
+    "storage": "128GB"
+  },
+  {
+    "id": 113,
+    "model": "iPhone 13 Pro 13 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 46251,
+    "color": "Graphite",
+    "storage": "128GB"
+  },
+  {
+    "id": 114,
+    "model": "iPhone 13 Pro 13 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 46251,
+    "color": "Sierra Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 115,
+    "model": "iPhone 13 Pro 13 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 46251,
+    "color": "Silver",
+    "storage": "128GB"
+  },
+  {
+    "id": 116,
+    "model": "iPhone 13 Pro 13 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Alpine Green",
+    "storage": "1TB"
+  },
+  {
+    "id": 117,
+    "model": "iPhone 13 Pro 13 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Gold",
+    "storage": "1TB"
+  },
+  {
+    "id": 118,
+    "model": "iPhone 13 Pro 13 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Graphite",
+    "storage": "1TB"
+  },
+  {
+    "id": 119,
+    "model": "iPhone 13 Pro 13 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Sierra Blue",
+    "storage": "1TB"
+  },
+  {
+    "id": 120,
+    "model": "iPhone 13 Pro 13 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 121,
+    "model": "iPhone 13 Pro 13 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Alpine Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 122,
+    "model": "iPhone 13 Pro 13 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Gold",
+    "storage": "256GB"
+  },
+  {
+    "id": 123,
+    "model": "iPhone 13 Pro 13 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Graphite",
+    "storage": "256GB"
+  },
+  {
+    "id": 124,
+    "model": "iPhone 13 Pro 13 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Sierra Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 125,
+    "model": "iPhone 13 Pro 13 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 58996,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 126,
+    "model": "iPhone 13 Pro 13 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Alpine Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 127,
+    "model": "iPhone 13 Pro 13 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Gold",
+    "storage": "512GB"
+  },
+  {
+    "id": 128,
+    "model": "iPhone 13 Pro 13 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Graphite",
+    "storage": "512GB"
+  },
+  {
+    "id": 129,
+    "model": "iPhone 13 Pro 13 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Sierra Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 130,
+    "model": "iPhone 13 Pro 13 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 131,
+    "model": "iPhone 14 14 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 39415,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 132,
+    "model": "iPhone 14 14 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 39415,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 133,
+    "model": "iPhone 14 14 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 39415,
+    "color": "Midnight",
+    "storage": "128GB"
+  },
+  {
+    "id": 134,
+    "model": "iPhone 14 14 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 39415,
+    "color": "Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 135,
+    "model": "iPhone 14 14 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 39415,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 136,
+    "model": "iPhone 14 14 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 39415,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 137,
+    "model": "iPhone 14 14 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "(PRODUCT)RED",
+    "storage": "256GB"
+  },
+  {
+    "id": 138,
+    "model": "iPhone 14 14 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 139,
+    "model": "iPhone 14 14 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Midnight",
+    "storage": "256GB"
+  },
+  {
+    "id": 140,
+    "model": "iPhone 14 14 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 141,
+    "model": "iPhone 14 14 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Starlight",
+    "storage": "256GB"
+  },
+  {
+    "id": 142,
+    "model": "iPhone 14 14 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 44310,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 143,
+    "model": "iPhone 14 14 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50134,
+    "color": "(PRODUCT)RED",
+    "storage": "512GB"
+  },
+  {
+    "id": 144,
+    "model": "iPhone 14 14 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50134,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 145,
+    "model": "iPhone 14 14 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50134,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 146,
+    "model": "iPhone 14 14 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50134,
+    "color": "Purple",
+    "storage": "512GB"
+  },
+  {
+    "id": 147,
+    "model": "iPhone 14 14 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50134,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 148,
+    "model": "iPhone 14 14 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50134,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 149,
+    "model": "iPhone 14 14 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49121,
+    "color": "(PRODUCT)RED",
+    "storage": "128GB"
+  },
+  {
+    "id": 150,
+    "model": "iPhone 14 14 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49121,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 151,
+    "model": "iPhone 14 14 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49121,
+    "color": "Midnight",
+    "storage": "128GB"
+  },
+  {
+    "id": 152,
+    "model": "iPhone 14 14 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49121,
+    "color": "Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 153,
+    "model": "iPhone 14 14 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49121,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 154,
+    "model": "iPhone 14 14 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 49121,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 155,
+    "model": "iPhone 14 Pro 14 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50218,
+    "color": "Deep Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 156,
+    "model": "iPhone 14 Pro 14 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50218,
+    "color": "Gold",
+    "storage": "128GB"
+  },
+  {
+    "id": 157,
+    "model": "iPhone 14 Pro 14 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50218,
+    "color": "Silver",
+    "storage": "128GB"
+  },
+  {
+    "id": 158,
+    "model": "iPhone 14 Pro 14 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 50218,
+    "color": "Space Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 159,
+    "model": "iPhone 14 Pro 14 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 75791,
+    "color": "Deep Purple",
+    "storage": "1TB"
+  },
+  {
+    "id": 160,
+    "model": "iPhone 14 Pro 14 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 75791,
+    "color": "Gold",
+    "storage": "1TB"
+  },
+  {
+    "id": 161,
+    "model": "iPhone 14 Pro 14 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 75791,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 162,
+    "model": "iPhone 14 Pro 14 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 75791,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 163,
+    "model": "iPhone 14 Pro 14 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Deep Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 164,
+    "model": "iPhone 14 Pro 14 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Gold",
+    "storage": "256GB"
+  },
+  {
+    "id": 165,
+    "model": "iPhone 14 Pro 14 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 166,
+    "model": "iPhone 14 Pro 14 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 54185,
+    "color": "Space Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 167,
+    "model": "iPhone 14 Pro 14 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 63975,
+    "color": "Deep Purple",
+    "storage": "512GB"
+  },
+  {
+    "id": 168,
+    "model": "iPhone 14 Pro 14 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 63975,
+    "color": "Gold",
+    "storage": "512GB"
+  },
+  {
+    "id": 169,
+    "model": "iPhone 14 Pro 14 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 63975,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 170,
+    "model": "iPhone 14 Pro 14 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 63975,
+    "color": "Space Black",
+    "storage": "512GB"
+  },
+  {
+    "id": 171,
+    "model": "iPhone 14 Pro 14 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Deep Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 172,
+    "model": "iPhone 14 Pro 14 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Gold",
+    "storage": "128GB"
+  },
+  {
+    "id": 173,
+    "model": "iPhone 14 Pro 14 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Silver",
+    "storage": "128GB"
+  },
+  {
+    "id": 174,
+    "model": "iPhone 14 Pro 14 Pro Max 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Space Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 175,
+    "model": "iPhone 14 Pro 14 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 69799,
+    "color": "Deep Purple",
+    "storage": "1TB"
+  },
+  {
+    "id": 176,
+    "model": "iPhone 14 Pro 14 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 69799,
+    "color": "Gold",
+    "storage": "1TB"
+  },
+  {
+    "id": 177,
+    "model": "iPhone 14 Pro 14 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 69799,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 178,
+    "model": "iPhone 14 Pro 14 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 69799,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 179,
+    "model": "iPhone 14 Pro 14 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 60093,
+    "color": "Deep Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 180,
+    "model": "iPhone 14 Pro 14 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 60093,
+    "color": "Gold",
+    "storage": "256GB"
+  },
+  {
+    "id": 181,
+    "model": "iPhone 14 Pro 14 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 60093,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 182,
+    "model": "iPhone 14 Pro 14 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 60093,
+    "color": "Space Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 183,
+    "model": "iPhone 14 Pro 14 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Deep Purple",
+    "storage": "512GB"
+  },
+  {
+    "id": 184,
+    "model": "iPhone 14 Pro 14 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Gold",
+    "storage": "512GB"
+  },
+  {
+    "id": 185,
+    "model": "iPhone 14 Pro 14 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 186,
+    "model": "iPhone 14 Pro 14 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Space Black",
+    "storage": "512GB"
+  },
+  {
+    "id": 187,
+    "model": "iPhone 15 15 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 48192,
+    "color": "Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 188,
+    "model": "iPhone 15 15 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 48192,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 189,
+    "model": "iPhone 15 15 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 48192,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 190,
+    "model": "iPhone 15 15 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 48192,
+    "color": "Pink",
+    "storage": "128GB"
+  },
+  {
+    "id": 191,
+    "model": "iPhone 15 15 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 48192,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 192,
+    "model": "iPhone 15 15 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 52075,
+    "color": "Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 193,
+    "model": "iPhone 15 15 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 52075,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 194,
+    "model": "iPhone 15 15 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 52075,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 195,
+    "model": "iPhone 15 15 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 52075,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 196,
+    "model": "iPhone 15 15 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 52075,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 197,
+    "model": "iPhone 15 15 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Black",
+    "storage": "512GB"
+  },
+  {
+    "id": 198,
+    "model": "iPhone 15 15 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 199,
+    "model": "iPhone 15 15 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 200,
+    "model": "iPhone 15 15 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 201,
+    "model": "iPhone 15 15 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 57139,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 202,
+    "model": "iPhone 15 15 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 53172,
+    "color": "Black",
+    "storage": "128GB"
+  },
+  {
+    "id": 203,
+    "model": "iPhone 15 15 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 53172,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 204,
+    "model": "iPhone 15 15 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 53172,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 205,
+    "model": "iPhone 15 15 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 53172,
+    "color": "Pink",
+    "storage": "128GB"
+  },
+  {
+    "id": 206,
+    "model": "iPhone 15 15 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 53172,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 207,
+    "model": "iPhone 15 15 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 208,
+    "model": "iPhone 15 15 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 209,
+    "model": "iPhone 15 15 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 210,
+    "model": "iPhone 15 15 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 211,
+    "model": "iPhone 15 15 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 212,
+    "model": "iPhone 15 15 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 67942,
+    "color": "Black",
+    "storage": "512GB"
+  },
+  {
+    "id": 213,
+    "model": "iPhone 15 15 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 67942,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 214,
+    "model": "iPhone 15 15 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 67942,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 215,
+    "model": "iPhone 15 15 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 67942,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 216,
+    "model": "iPhone 15 15 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 67942,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 217,
+    "model": "iPhone 15 Pro 15 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66929,
+    "color": "Black Titanium",
+    "storage": "128GB"
+  },
+  {
+    "id": 218,
+    "model": "iPhone 15 Pro 15 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66929,
+    "color": "Blue Titanium",
+    "storage": "128GB"
+  },
+  {
+    "id": 219,
+    "model": "iPhone 15 Pro 15 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66929,
+    "color": "Natural Titanium",
+    "storage": "128GB"
+  },
+  {
+    "id": 220,
+    "model": "iPhone 15 Pro 15 Pro 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66929,
+    "color": "White Titanium",
+    "storage": "128GB"
+  },
+  {
+    "id": 221,
+    "model": "iPhone 15 Pro 15 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 92418,
+    "color": "Black Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 222,
+    "model": "iPhone 15 Pro 15 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 92418,
+    "color": "Blue Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 223,
+    "model": "iPhone 15 Pro 15 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 92418,
+    "color": "Natural Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 224,
+    "model": "iPhone 15 Pro 15 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 92418,
+    "color": "White Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 225,
+    "model": "iPhone 15 Pro 15 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 71824,
+    "color": "Black Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 226,
+    "model": "iPhone 15 Pro 15 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 71824,
+    "color": "Blue Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 227,
+    "model": "iPhone 15 Pro 15 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 71824,
+    "color": "Natural Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 228,
+    "model": "iPhone 15 Pro 15 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 71824,
+    "color": "White Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 229,
+    "model": "iPhone 15 Pro 15 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Black Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 230,
+    "model": "iPhone 15 Pro 15 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Blue Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 231,
+    "model": "iPhone 15 Pro 15 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Natural Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 232,
+    "model": "iPhone 15 Pro 15 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "White Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 233,
+    "model": "iPhone 15 Pro Max 15 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 98410,
+    "color": "Black Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 234,
+    "model": "iPhone 15 Pro Max 15 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 98410,
+    "color": "Blue Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 235,
+    "model": "iPhone 15 Pro Max 15 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 98410,
+    "color": "Natural Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 236,
+    "model": "iPhone 15 Pro Max 15 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 98410,
+    "color": "White Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 237,
+    "model": "iPhone 15 Pro Max 15 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 82712,
+    "color": "Black Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 238,
+    "model": "iPhone 15 Pro Max 15 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 82712,
+    "color": "Blue Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 239,
+    "model": "iPhone 15 Pro Max 15 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 82712,
+    "color": "Natural Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 240,
+    "model": "iPhone 15 Pro Max 15 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 82712,
+    "color": "White Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 241,
+    "model": "iPhone 15 Pro Max 15 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 85666,
+    "color": "Black Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 242,
+    "model": "iPhone 15 Pro Max 15 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 85666,
+    "color": "Blue Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 243,
+    "model": "iPhone 15 Pro Max 15 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 85666,
+    "color": "Natural Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 244,
+    "model": "iPhone 15 Pro Max 15 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 85666,
+    "color": "White Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 245,
+    "model": "iPhone 16 16 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 62034,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 246,
+    "model": "iPhone 16 16 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 62034,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 247,
+    "model": "iPhone 16 16 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 62034,
+    "color": "Midnight",
+    "storage": "128GB"
+  },
+  {
+    "id": 248,
+    "model": "iPhone 16 16 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 62034,
+    "color": "Pink",
+    "storage": "128GB"
+  },
+  {
+    "id": 249,
+    "model": "iPhone 16 16 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 62034,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 250,
+    "model": "iPhone 16 16 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 62034,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 251,
+    "model": "iPhone 16 16 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 252,
+    "model": "iPhone 16 16 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 253,
+    "model": "iPhone 16 16 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Midnight",
+    "storage": "256GB"
+  },
+  {
+    "id": 254,
+    "model": "iPhone 16 16 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 255,
+    "model": "iPhone 16 16 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Starlight",
+    "storage": "256GB"
+  },
+  {
+    "id": 256,
+    "model": "iPhone 16 16 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 66001,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 257,
+    "model": "iPhone 16 16 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 258,
+    "model": "iPhone 16 16 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 259,
+    "model": "iPhone 16 16 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 260,
+    "model": "iPhone 16 16 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 261,
+    "model": "iPhone 16 16 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 262,
+    "model": "iPhone 16 16 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 77817,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 263,
+    "model": "iPhone 16 16 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 61106,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 264,
+    "model": "iPhone 16 16 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 61106,
+    "color": "Green",
+    "storage": "128GB"
+  },
+  {
+    "id": 265,
+    "model": "iPhone 16 16 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 61106,
+    "color": "Midnight",
+    "storage": "128GB"
+  },
+  {
+    "id": 266,
+    "model": "iPhone 16 16 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 61106,
+    "color": "Pink",
+    "storage": "128GB"
+  },
+  {
+    "id": 267,
+    "model": "iPhone 16 16 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 61106,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 268,
+    "model": "iPhone 16 16 Plus 128GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 61106,
+    "color": "Yellow",
+    "storage": "128GB"
+  },
+  {
+    "id": 269,
+    "model": "iPhone 16 16 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 76804,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 270,
+    "model": "iPhone 16 16 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 76804,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 271,
+    "model": "iPhone 16 16 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 76804,
+    "color": "Midnight",
+    "storage": "256GB"
+  },
+  {
+    "id": 272,
+    "model": "iPhone 16 16 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 76804,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 273,
+    "model": "iPhone 16 16 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 76804,
+    "color": "Starlight",
+    "storage": "256GB"
+  },
+  {
+    "id": 274,
+    "model": "iPhone 16 16 Plus 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 76804,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 275,
+    "model": "iPhone 16 16 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 84653,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 276,
+    "model": "iPhone 16 16 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 84653,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 277,
+    "model": "iPhone 16 16 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 84653,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 278,
+    "model": "iPhone 16 16 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 84653,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 279,
+    "model": "iPhone 16 16 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 84653,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 280,
+    "model": "iPhone 16 16 Plus 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 84653,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 281,
+    "model": "iPhone 16 Pro 16 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 127022,
+    "color": "Black Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 282,
+    "model": "iPhone 16 Pro 16 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 127022,
+    "color": "Desert Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 283,
+    "model": "iPhone 16 Pro 16 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 127022,
+    "color": "Natural Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 284,
+    "model": "iPhone 16 Pro 16 Pro 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 127022,
+    "color": "White Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 285,
+    "model": "iPhone 16 Pro 16 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 97482,
+    "color": "Black Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 286,
+    "model": "iPhone 16 Pro 16 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 97482,
+    "color": "Desert Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 287,
+    "model": "iPhone 16 Pro 16 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 97482,
+    "color": "Natural Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 288,
+    "model": "iPhone 16 Pro 16 Pro 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 97482,
+    "color": "White Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 289,
+    "model": "iPhone 16 Pro 16 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 110311,
+    "color": "Black Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 290,
+    "model": "iPhone 16 Pro 16 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 110311,
+    "color": "Desert Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 291,
+    "model": "iPhone 16 Pro 16 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 110311,
+    "color": "Natural Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 292,
+    "model": "iPhone 16 Pro 16 Pro 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 110311,
+    "color": "White Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 293,
+    "model": "iPhone 16 Pro 16 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 133943,
+    "color": "Black Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 294,
+    "model": "iPhone 16 Pro 16 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 133943,
+    "color": "Desert Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 295,
+    "model": "iPhone 16 Pro 16 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 133943,
+    "color": "Natural Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 296,
+    "model": "iPhone 16 Pro 16 Pro Max 1TB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 133943,
+    "color": "White Titanium",
+    "storage": "1TB"
+  },
+  {
+    "id": 297,
+    "model": "iPhone 16 Pro 16 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 99423,
+    "color": "Black Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 298,
+    "model": "iPhone 16 Pro 16 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 99423,
+    "color": "Desert Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 299,
+    "model": "iPhone 16 Pro 16 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 99423,
+    "color": "Natural Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 300,
+    "model": "iPhone 16 Pro 16 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 99423,
+    "color": "White Titanium",
+    "storage": "256GB"
+  },
+  {
+    "id": 301,
+    "model": "iPhone 16 Pro 16 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 114278,
+    "color": "Black Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 302,
+    "model": "iPhone 16 Pro 16 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 114278,
+    "color": "Desert Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 303,
+    "model": "iPhone 16 Pro 16 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 114278,
+    "color": "Natural Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 304,
+    "model": "iPhone 16 Pro 16 Pro Max 512GB",
+    "brand": "Apple",
+    "category": "iPhone",
+    "price": 114278,
+    "color": "White Titanium",
+    "storage": "512GB"
+  },
+  {
+    "id": 1,
+    "model": "iPad (10th gen) iPad 10 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 2,
+    "model": "iPad (10th gen) iPad 10 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 3,
+    "model": "iPad (10th gen) iPad 10 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 4,
+    "model": "iPad (10th gen) iPad 10 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 5,
+    "model": "iPad (10th gen) iPad 10 64GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Blue",
+    "storage": "64GB"
+  },
+  {
+    "id": 6,
+    "model": "iPad (10th gen) iPad 10 64GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Pink",
+    "storage": "64GB"
+  },
+  {
+    "id": 7,
+    "model": "iPad (10th gen) iPad 10 64GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Silver",
+    "storage": "64GB"
+  },
+  {
+    "id": 8,
+    "model": "iPad (10th gen) iPad 10 64GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 34435,
+    "color": "Yellow",
+    "storage": "64GB"
+  },
+  {
+    "id": 9,
+    "model": "iPad Air (M2, 2024) Air 11 (M2) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 85750,
+    "color": "Blue",
+    "storage": "1TB"
+  },
+  {
+    "id": 10,
+    "model": "iPad Air (M2, 2024) Air 11 (M2) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 85750,
+    "color": "Purple",
+    "storage": "1TB"
+  },
+  {
+    "id": 11,
+    "model": "iPad Air (M2, 2024) Air 11 (M2) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 85750,
+    "color": "Space Gray",
+    "storage": "1TB"
+  },
+  {
+    "id": 12,
+    "model": "iPad Air (M2, 2024) Air 11 (M2) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 85750,
+    "color": "Starlight",
+    "storage": "1TB"
+  },
+  {
+    "id": 13,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 128GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 67014,
+    "color": "Blue",
+    "storage": "128GB"
+  },
+  {
+    "id": 14,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 128GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 67014,
+    "color": "Purple",
+    "storage": "128GB"
+  },
+  {
+    "id": 15,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 128GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 67014,
+    "color": "Space Gray",
+    "storage": "128GB"
+  },
+  {
+    "id": 16,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 128GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 67014,
+    "color": "Starlight",
+    "storage": "128GB"
+  },
+  {
+    "id": 17,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 68955,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 18,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 68955,
+    "color": "Purple",
+    "storage": "512GB"
+  },
+  {
+    "id": 19,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 68955,
+    "color": "Space Gray",
+    "storage": "512GB"
+  },
+  {
+    "id": 20,
+    "model": "iPad Air (M2, 2024) Air 13 (M2) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 68955,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 21,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 136897,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 22,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 136897,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 23,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 73850,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 24,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 73850,
+    "color": "Space Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 25,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 2TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 142805,
+    "color": "Silver",
+    "storage": "2TB"
+  },
+  {
+    "id": 26,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 2TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 142805,
+    "color": "Space Black",
+    "storage": "2TB"
+  },
+  {
+    "id": 27,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 105416,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 28,
+    "model": "iPad Pro (M4, 2024) Pro 11 (M4) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 105416,
+    "color": "Space Black",
+    "storage": "512GB"
+  },
+  {
+    "id": 29,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 139851,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 30,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 1TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 139851,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 31,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 95541,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 32,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 256GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 95541,
+    "color": "Space Black",
+    "storage": "256GB"
+  },
+  {
+    "id": 33,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 2TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 147700,
+    "color": "Silver",
+    "storage": "2TB"
+  },
+  {
+    "id": 34,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 2TB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 147700,
+    "color": "Space Black",
+    "storage": "2TB"
+  },
+  {
+    "id": 35,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 121114,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 36,
+    "model": "iPad Pro (M4, 2024) Pro 13 (M4) 512GB",
+    "brand": "Apple",
+    "category": "iPad",
+    "price": 121114,
+    "color": "Space Black",
+    "storage": "512GB"
+  },
+  {
+    "id": 1,
+    "model": "Mac mini (M2/M2 Pro) mini (M2 Pro) 32/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 118160,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 2,
+    "model": "Mac mini (M2/M2 Pro) mini (M2 Pro) 32/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 118160,
+    "color": "Space Gray",
+    "storage": "1TB"
+  },
+  {
+    "id": 3,
+    "model": "Mac mini (M2/M2 Pro) mini (M2) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 49965,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 4,
+    "model": "Mac mini (M2/M2 Pro) mini (M2) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 49965,
+    "color": "Space Gray",
+    "storage": "512GB"
+  },
+  {
+    "id": 5,
+    "model": "Mac mini (M2/M2 Pro) mini (M2) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 49965,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 6,
+    "model": "Mac mini (M2/M2 Pro) mini (M2) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 49965,
+    "color": "Space Gray",
+    "storage": "512GB"
+  },
+  {
+    "id": 7,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 8,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 9,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Space Gray",
+    "storage": "512GB"
+  },
+  {
+    "id": 10,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 11,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Midnight",
+    "storage": "512GB"
+  },
+  {
+    "id": 12,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 13,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Space Gray",
+    "storage": "512GB"
+  },
+  {
+    "id": 14,
+    "model": "MacBook Air (M3, 2024) Air 13 (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 95963,
+    "color": "Starlight",
+    "storage": "512GB"
+  },
+  {
+    "id": 15,
+    "model": "MacBook Air (M3, 2024) Air 15 (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 78998,
+    "color": "Midnight",
+    "storage": "256GB"
+  },
+  {
+    "id": 16,
+    "model": "MacBook Air (M3, 2024) Air 15 (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 78998,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 17,
+    "model": "MacBook Air (M3, 2024) Air 15 (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 78998,
+    "color": "Space Gray",
+    "storage": "256GB"
+  },
+  {
+    "id": 18,
+    "model": "MacBook Air (M3, 2024) Air 15 (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 78998,
+    "color": "Starlight",
+    "storage": "256GB"
+  },
+  {
+    "id": 19,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 18/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 20,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 18/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 21,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 36/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 22,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 36/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 23,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 48/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 24,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 48/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 25,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 64/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 26,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 14 (M3/M3 Pro/M3 Max) 64/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 100014,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 27,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 18/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 28,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 18/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 29,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 36/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 30,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 36/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 31,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 48/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 32,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 48/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 33,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 64/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Silver",
+    "storage": "1TB"
+  },
+  {
+    "id": 34,
+    "model": "MacBook Pro (M3/M3 Pro/M3 Max, 2023) Pro 16 (M3 Pro/M3 Max) 64/1TB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 239021,
+    "color": "Space Black",
+    "storage": "1TB"
+  },
+  {
+    "id": 35,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Blue",
+    "storage": "256GB"
+  },
+  {
+    "id": 36,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Green",
+    "storage": "256GB"
+  },
+  {
+    "id": 37,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Orange",
+    "storage": "256GB"
+  },
+  {
+    "id": 38,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Pink",
+    "storage": "256GB"
+  },
+  {
+    "id": 39,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Purple",
+    "storage": "256GB"
+  },
+  {
+    "id": 40,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Silver",
+    "storage": "256GB"
+  },
+  {
+    "id": 41,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/256GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 120017,
+    "color": "Yellow",
+    "storage": "256GB"
+  },
+  {
+    "id": 42,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 43,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 44,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Orange",
+    "storage": "512GB"
+  },
+  {
+    "id": 45,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 46,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Purple",
+    "storage": "512GB"
+  },
+  {
+    "id": 47,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 48,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 16/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 49,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Blue",
+    "storage": "512GB"
+  },
+  {
+    "id": 50,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Green",
+    "storage": "512GB"
+  },
+  {
+    "id": 51,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Orange",
+    "storage": "512GB"
+  },
+  {
+    "id": 52,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Pink",
+    "storage": "512GB"
+  },
+  {
+    "id": 53,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Purple",
+    "storage": "512GB"
+  },
+  {
+    "id": 54,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Silver",
+    "storage": "512GB"
+  },
+  {
+    "id": 55,
+    "model": "iMac 24\" (M3, 2023) iMac 24\" (M3) 8/512GB",
+    "brand": "Apple",
+    "category": "Mac",
+    "price": 154958,
+    "color": "Yellow",
+    "storage": "512GB"
+  },
+  {
+    "id": 1,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 2,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 3,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 4,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 5,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 6,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 7,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 8,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 29034,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 9,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 10,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 11,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 12,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 13,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 14,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 15,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 16,
+    "model": "Apple Watch Series 10 (ожид.) Series 10 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 31988,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 17,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 18,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 19,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Pink",
+    "storage": "N/A"
+  },
+  {
+    "id": 20,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 21,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 22,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 23,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 24,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Pink",
+    "storage": "N/A"
+  },
+  {
+    "id": 25,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 26,
+    "model": "Apple Watch Series 9 Series 9 41mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 38993,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 27,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 28,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 29,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Pink",
+    "storage": "N/A"
+  },
+  {
+    "id": 30,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 31,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 32,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "(PRODUCT)RED",
+    "storage": "N/A"
+  },
+  {
+    "id": 33,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Midnight",
+    "storage": "N/A"
+  },
+  {
+    "id": 34,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Pink",
+    "storage": "N/A"
+  },
+  {
+    "id": 35,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 36,
+    "model": "Apple Watch Series 9 Series 9 45mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 42031,
+    "color": "Starlight",
+    "storage": "N/A"
+  },
+  {
+    "id": 37,
+    "model": "Apple Watch Ultra 2 Ultra 2 49mm GPS+Cellular",
+    "brand": "Apple",
+    "category": "Аксессуары",
+    "price": 57983,
+    "color": "Titanium",
+    "storage": "N/A"
+  },
+  {
+    "id": 1,
+    "model": "AirPods (2nd gen) AirPods 2",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 11985,
+    "color": "White",
+    "storage": "N/A"
+  },
+  {
+    "id": 2,
+    "model": "AirPods (3rd gen) AirPods 3",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 9959,
+    "color": "White",
+    "storage": "N/A"
+  },
+  {
+    "id": 3,
+    "model": "AirPods Max AirPods Max",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 41018,
+    "color": "Green",
+    "storage": "N/A"
+  },
+  {
+    "id": 4,
+    "model": "AirPods Max AirPods Max",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 41018,
+    "color": "Pink",
+    "storage": "N/A"
+  },
+  {
+    "id": 5,
+    "model": "AirPods Max AirPods Max",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 41018,
+    "color": "Silver",
+    "storage": "N/A"
+  },
+  {
+    "id": 6,
+    "model": "AirPods Max AirPods Max",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 41018,
+    "color": "Sky Blue",
+    "storage": "N/A"
+  },
+  {
+    "id": 7,
+    "model": "AirPods Max AirPods Max",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 41018,
+    "color": "Space Gray",
+    "storage": "N/A"
+  },
+  {
+    "id": 8,
+    "model": "AirPods Pro (2nd gen, USB‑C) AirPods Pro 2 USB‑C",
+    "brand": "Apple",
+    "category": "Наушники",
+    "price": 16036,
+    "color": "White",
+    "storage": "N/A"
+  }
+]

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наушники - RESTORE116</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0071e3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body class="models-page">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <button class="back-button-header" onclick="history.back()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                </button>
+                <div class="nav-logo">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <span>RESTORE116</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="apple-store.html" class="nav-link">Все товары</a>
+                    <a href="headphones-models.html" class="nav-link active">Наушники</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Наушники</h1>
+            <p class="hero-subtitle">Выберите модель наушников</p>
+            <div class="hero-description">
+                <p>AirPods и наушники Apple с пространственным звуком</p>
+            </div>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models-section">
+        <div class="container">
+            <h2 class="section-title">Модели наушников</h2>
+            <div class="models-grid" id="models-grid">
+                <!-- Модели будут загружены динамически -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Продукты</h3>
+                    <ul>
+                        <li><a href="iphone-models.html">iPhone</a></li>
+                        <li><a href="ipad-models.html">iPad</a></li>
+                        <li><a href="mac-models.html">Mac</a></li>
+                        <li><a href="headphones-models.html">Наушники</a></li>
+                        <li><a href="accessories-models.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#help">Помощь</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#warranty">Гарантия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#careers">Карьера</a></li>
+                        <li><a href="#news">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RESTORE116. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Загружаем данные и создаем модели
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModels();
+        });
+
+        function loadModels() {
+            console.log('🔄 Загружаем модели наушников...');
+            
+            fetch('products.json?' + Date.now())
+                .then(response => response.json())
+                .then(products => {
+                    console.log('✅ Данные загружены:', products.length, 'товаров');
+                    const headphonesProducts = products.filter(p => p.category === 'Наушники' || p.category === 'наушники');
+                    createModels(headphonesProducts);
+                })
+                .catch(error => {
+                    console.error('❌ Ошибка загрузки данных:', error);
+                    showErrorModels();
+                });
+        }
+
+        function createModels(products) {
+            const modelsGrid = document.getElementById('models-grid');
+            
+            // Группируем товары по моделям
+            const models = {};
+            products.forEach(product => {
+                // Извлекаем основное название модели
+                const modelName = extractModelName(product.model);
+                if (!models[modelName]) {
+                    models[modelName] = [];
+                }
+                models[modelName].push(product);
+            });
+
+            // Создаем карточки моделей
+            const modelCards = Object.entries(models).map(([modelName, modelProducts]) => {
+                const modelInfo = getModelInfo(modelName);
+                const uniqueVariants = [...new Set(modelProducts.map(p => p.color + ' ' + p.storage))].length;
+                const priceRange = getPriceRange(modelProducts);
+                
+                return `
+                    <div class="model-card" onclick="openModel('${modelName}')">
+                        <div class="model-image">${modelInfo.icon}</div>
+                        <h3 class="model-name">${modelName}</h3>
+                        <p class="model-description">${modelInfo.description}</p>
+                        <div class="model-features">
+                            ${modelInfo.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                        </div>
+                        <div class="model-stats">
+                            <span class="stat">${modelProducts.length} вариантов</span>
+                            <span class="stat">${uniqueVariants} конфигураций</span>
+                        </div>
+                        <div class="model-price-range">
+                            ${priceRange}
+                        </div>
+                        <button class="model-button">Смотреть варианты</button>
+                    </div>
+                `;
+            });
+
+            modelsGrid.innerHTML = modelCards.join('');
+        }
+
+        function extractModelName(fullModel) {
+            // Извлекаем основное название модели наушников
+            if (fullModel.includes('AirPods Pro')) {
+                return 'AirPods Pro';
+            } else if (fullModel.includes('AirPods Max')) {
+                return 'AirPods Max';
+            } else if (fullModel.includes('AirPods')) {
+                return 'AirPods';
+            }
+            return fullModel;
+        }
+
+        function getModelInfo(modelName) {
+            const modelMap = {
+                'AirPods Pro': {
+                    icon: '🎧',
+                    description: 'Беспроводные наушники с активным шумоподавлением',
+                    features: ['Active Noise Cancellation', 'Spatial Audio', 'H2 чип', 'USB-C']
+                },
+                'AirPods Max': {
+                    icon: '🎧',
+                    description: 'Накладные наушники с пространственным звуком',
+                    features: ['Spatial Audio', 'H1 чип', 'Active Noise Cancellation', 'Lightning']
+                },
+                'AirPods': {
+                    icon: '🎧',
+                    description: 'Беспроводные наушники с чипом H1',
+                    features: ['H1 чип', 'Spatial Audio', 'Lightning', 'Беспроводная зарядка']
+                }
+            };
+            
+            return modelMap[modelName] || {
+                icon: '🎧',
+                description: 'Наушники Apple с передовыми технологиями',
+                features: ['Apple чип', 'Spatial Audio', 'Беспроводные']
+            };
+        }
+
+        function getPriceRange(products) {
+            const prices = products.map(p => p.price).filter(p => p > 0);
+            if (prices.length === 0) return 'Цены по запросу';
+            
+            const minPrice = Math.min(...prices);
+            const maxPrice = Math.max(...prices);
+            
+            if (minPrice === maxPrice) {
+                return `от ${minPrice.toLocaleString()} ₽`;
+            }
+            return `от ${minPrice.toLocaleString()} ₽`;
+        }
+
+        function openModel(modelName) {
+            // Переходим на страницу с товарами этой модели
+            window.location.href = `apple-store.html?category=Аксессуары&model=${encodeURIComponent(modelName)}`;
+        }
+
+        function showErrorModels() {
+            const modelsGrid = document.getElementById('models-grid');
+            modelsGrid.innerHTML = `
+                <div class="error-state">
+                    <h3>Ошибка загрузки</h3>
+                    <p>Не удалось загрузить данные. Попробуйте обновить страницу.</p>
+                </div>
+            `;
+        }
+
+        // Загружаем модели при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModels();
+        });
+    </script>
+    <script src="mobile-menu-helper.js"></script>
+    <script src="premium-effects.js"></script>
+</body>
+</html>

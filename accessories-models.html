@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аксессуары - RESTORE116</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0071e3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body class="models-page">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <button class="back-button-header" onclick="history.back()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                </button>
+                <div class="nav-logo">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <span>RESTORE116</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="apple-store.html" class="nav-link">Все товары</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Аксессуары</h1>
+            <p class="hero-subtitle">Apple Watch, AirTag и другие аксессуары</p>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models-section">
+        <div class="container">
+            <h2 class="section-title">Модели аксессуаров</h2>
+            <div class="models-grid" id="models-grid">
+                <!-- Модели будут загружены динамически -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Продукты</h3>
+                    <ul>
+                        <li><a href="iphone-models.html">iPhone</a></li>
+                        <li><a href="ipad-models.html">iPad</a></li>
+                        <li><a href="mac-models.html">Mac</a></li>
+                        <li><a href="headphones-models.html">Наушники</a></li>
+                        <li><a href="accessories-models.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#help">Помощь</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#warranty">Гарантия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#careers">Карьера</a></li>
+                        <li><a href="#news">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RESTORE116. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Загружаем данные и создаем модели
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModels();
+        });
+
+        function loadModels() {
+            console.log('🔄 Загружаем модели аксессуаров...');
+            
+            fetch('products.json?' + Date.now())
+                .then(response => response.json())
+                .then(products => {
+                    console.log('✅ Данные загружены:', products.length, 'товаров');
+                    // Фильтруем только аксессуары
+                    const accessoriesProducts = products.filter(product => product.category === 'Аксессуары' || product.category === 'аксессуары');
+                    console.log('⌚ Аксессуары найдены:', accessoriesProducts.length);
+                    createModels(accessoriesProducts);
+                })
+                .catch(error => {
+                    console.error('❌ Ошибка загрузки данных:', error);
+                    showErrorModels();
+                });
+        }
+
+        function createModels(products) {
+            const modelsGrid = document.getElementById('models-grid');
+            
+            // Группируем товары по типам аксессуаров
+            const types = {};
+            products.forEach(product => {
+                const modelName = extractModelName(product.model);
+                const type = getAccessoryType(modelName);
+                
+                if (!types[type]) {
+                    types[type] = [];
+                }
+                types[type].push(product);
+            });
+
+            // Создаем карточки типов
+            const typeCards = Object.entries(types).map(([type, typeProducts]) => {
+                const typeInfo = getAccessoryTypeInfo(type);
+                const uniqueModels = [...new Set(typeProducts.map(p => extractModelName(p.model)))].length;
+                const priceRange = getPriceRange(typeProducts);
+                
+                return `
+                    <div class="model-card" onclick="openType('${type}')">
+                        <div class="model-image">${typeInfo.icon}</div>
+                        <h3 class="model-name">${typeInfo.name}</h3>
+                        <p class="model-description">${typeInfo.description}</p>
+                        <div class="model-features">
+                            ${typeInfo.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                        </div>
+                        <div class="model-stats">
+                            <span class="stat">${typeProducts.length} вариантов</span>
+                            <span class="stat">${uniqueModels} моделей</span>
+                        </div>
+                        <div class="model-price-range">
+                            ${priceRange}
+                        </div>
+                        <button class="model-button">Смотреть модели</button>
+                    </div>
+                `;
+            });
+
+            modelsGrid.innerHTML = typeCards.join('');
+        }
+
+        function extractModelName(fullModel) {
+            // Извлекаем основное название модели, убирая дублирование
+            const parts = fullModel.split(' ');
+            
+            // Убираем дублирование типа "Apple Watch Series 10 Series 10" -> "Apple Watch Series 10"
+            let cleanParts = [];
+            for (let i = 0; i < parts.length; i++) {
+                if (i === 0 || parts[i] !== parts[i-1]) {
+                    cleanParts.push(parts[i]);
+                }
+            }
+            
+            // Определяем тип аксессуара
+            if (cleanParts[0] === 'Apple' && cleanParts[1] === 'Watch') {
+                return 'Apple Watch';
+            } else if (cleanParts[0] === 'AirTag') {
+                return 'AirTag';
+            } else if (cleanParts[0] === 'MagSafe') {
+                return 'MagSafe';
+            } else if (cleanParts[0] === 'Чехол') {
+                return 'Чехлы';
+            } else if (cleanParts[0] === 'Кабель') {
+                return 'Кабели';
+            } else if (cleanParts[0] === 'Адаптер') {
+                return 'Адаптеры';
+            }
+            
+            return cleanParts.join(' ');
+        }
+
+        function getAccessoryType(modelName) {
+            // Определяем тип аксессуара
+            if (modelName.includes('Apple Watch')) return 'Apple Watch';
+            if (modelName.includes('AirTag')) return 'AirTag';
+            if (modelName.includes('MagSafe')) return 'MagSafe';
+            if (modelName.includes('Чехол')) return 'Чехлы';
+            if (modelName.includes('Кабель')) return 'Кабели';
+            if (modelName.includes('Адаптер')) return 'Адаптеры';
+            return 'Аксессуары';
+        }
+
+        function getAccessoryTypeInfo(type) {
+            const typeMap = {
+                'Apple Watch': {
+                    name: 'Apple Watch',
+                    icon: '⌚',
+                    description: 'Умные часы с функциями здоровья и фитнеса',
+                    features: ['ЭКГ', 'SpO2', 'GPS', 'Water Resistant']
+                },
+                'AirTag': {
+                    name: 'AirTag',
+                    icon: '🏷️',
+                    description: 'Умные метки для отслеживания вещей',
+                    features: ['U1 чип', 'Find My', 'Батарея 1 год', 'Water Resistant']
+                },
+                'MagSafe': {
+                    name: 'MagSafe',
+                    icon: '🔋',
+                    description: 'Магнитные зарядные устройства',
+                    features: ['Магнитное крепление', 'Быстрая зарядка', 'USB-C', '15W']
+                },
+                'Чехлы': {
+                    name: 'Чехлы',
+                    icon: '📱',
+                    description: 'Защитные чехлы для iPhone и iPad',
+                    features: ['Защита', 'Материалы премиум', 'Точная подгонка', 'Цвета']
+                },
+                'Кабели': {
+                    name: 'Кабели',
+                    icon: '🔌',
+                    description: 'Кабели для зарядки и синхронизации',
+                    features: ['USB-C', 'Lightning', 'Быстрая зарядка', 'Долговечность']
+                },
+                'Адаптеры': {
+                    name: 'Адаптеры',
+                    icon: '🔌',
+                    description: 'Адаптеры и переходники',
+                    features: ['USB-C', 'HDMI', 'Thunderbolt', 'Универсальность']
+                }
+            };
+            
+            return typeMap[type] || {
+                name: 'Аксессуары',
+                icon: '⌚',
+                description: 'Аксессуары Apple для ваших устройств',
+                features: ['Качество', 'Совместимость', 'Дизайн']
+            };
+        }
+
+        function getPriceRange(products) {
+            const prices = products.map(p => p.price).filter(p => p > 0);
+            if (prices.length === 0) return 'Цены по запросу';
+            
+            const minPrice = Math.min(...prices);
+            const maxPrice = Math.max(...prices);
+            
+            if (minPrice === maxPrice) {
+                return `от ${minPrice.toLocaleString()} ₽`;
+            }
+            return `от ${minPrice.toLocaleString()} ₽`;
+        }
+
+        function openType(type) {
+            // Переходим на страницу с товарами этого типа
+            window.location.href = `apple-store.html?category=Аксессуары&type=${type}`;
+        }
+
+        function showErrorModels() {
+            const modelsGrid = document.getElementById('models-grid');
+            modelsGrid.innerHTML = `
+                <div class="error-state">
+                    <h3>Ошибка загрузки</h3>
+                    <p>Не удалось загрузить данные. Попробуйте обновить страницу.</p>
+                </div>
+            `;
+        }
+
+        // Загружаем модели при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModels();
+        });
+    </script>
+    <script src="mobile-menu-helper.js"></script>
+    <script src="premium-effects.js"></script>
+</body>
+</html>

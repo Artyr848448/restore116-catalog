@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест загрузки JSON</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .product { border: 1px solid #ccc; margin: 10px 0; padding: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Тест загрузки JSON данных</h1>
+    <div id="status">Загружаем...</div>
+    <div id="products"></div>
+
+    <script>
+        console.log('🔄 Начинаем тест загрузки JSON...');
+        
+        fetch('products.json?' + Date.now())
+            .then(response => {
+                console.log('📡 Ответ сервера:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(products => {
+                console.log('✅ Данные загружены:', products.length, 'товаров');
+                console.log('📱 Первые 3 товара:', products.slice(0, 3));
+                
+                document.getElementById('status').innerHTML = 
+                    `<div class="success">✅ Успешно загружено ${products.length} товаров!</div>`;
+                
+                // Показываем первые 10 товаров
+                const productsDiv = document.getElementById('products');
+                products.slice(0, 10).forEach(product => {
+                    const div = document.createElement('div');
+                    div.className = 'product';
+                    div.innerHTML = `
+                        <strong>${product.model}</strong><br>
+                        Категория: ${product.category}<br>
+                        Цена: ${product.price.toLocaleString()} ₽<br>
+                        Цвет: ${product.color}<br>
+                        Память: ${product.storage}
+                    `;
+                    productsDiv.appendChild(div);
+                });
+                
+                if (products.length > 10) {
+                    const moreDiv = document.createElement('div');
+                    moreDiv.innerHTML = `<p>... и еще ${products.length - 10} товаров</p>`;
+                    productsDiv.appendChild(moreDiv);
+                }
+            })
+            .catch(error => {
+                console.error('❌ Ошибка:', error);
+                document.getElementById('status').innerHTML = 
+                    `<div class="error">❌ Ошибка загрузки: ${error.message}</div>`;
+            });
+    </script>
+</body>
+</html>
