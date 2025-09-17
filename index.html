@@ -315,8 +315,8 @@
                 
                 const categoryCards = document.querySelectorAll('.category-card');
                 categoryCards.forEach(card => {
-                    card.style.setProperty('padding', '20px', 'important');
-                    card.style.setProperty('min-height', '120px', 'important');
+                    card.style.setProperty('padding', '15px 20px', 'important');
+                    card.style.setProperty('min-height', '80px', 'important');
                     card.style.setProperty('text-align', 'left', 'important');
                     card.style.setProperty('display', 'flex', 'important');
                     card.style.setProperty('flex-direction', 'row', 'important');
@@ -326,8 +326,8 @@
                 
                 const categoryIcons = document.querySelectorAll('.category-icon');
                 categoryIcons.forEach(icon => {
-                    icon.style.setProperty('font-size', '3rem', 'important');
-                    icon.style.setProperty('margin-right', '20px', 'important');
+                    icon.style.setProperty('font-size', '2.5rem', 'important');
+                    icon.style.setProperty('margin-right', '15px', 'important');
                     icon.style.setProperty('margin-bottom', '0', 'important');
                     icon.style.setProperty('flex-shrink', '0', 'important');
                 });
@@ -340,20 +340,24 @@
                     content.style.setProperty('flex', '1', 'important');
                     content.style.setProperty('display', 'flex', 'important');
                     content.style.setProperty('flex-direction', 'column', 'important');
-                    content.style.setProperty('justify-content', 'space-between', 'important');
-                    content.style.setProperty('min-height', '80px', 'important');
+                    content.style.setProperty('justify-content', 'center', 'important');
                     
-                    // Перемещаем все элементы кроме иконки в контейнер
-                    const elements = Array.from(card.children).filter(child => child !== icon);
-                    elements.forEach(element => content.appendChild(element));
+                    // Перемещаем только основные элементы
+                    const name = card.querySelector('.category-name');
+                    const description = card.querySelector('.category-description');
+                    const priceRange = card.querySelector('.category-price-range');
+                    
+                    if (name) content.appendChild(name);
+                    if (description) content.appendChild(description);
+                    if (priceRange) content.appendChild(priceRange);
                     
                     // Добавляем стрелку в конец
                     const arrow = document.createElement('div');
                     arrow.className = 'category-arrow';
                     arrow.innerHTML = '→';
-                    arrow.style.setProperty('font-size', '1.5rem', 'important');
+                    arrow.style.setProperty('font-size', '1.2rem', 'important');
                     arrow.style.setProperty('color', 'var(--primary-color)', 'important');
-                    arrow.style.setProperty('margin-left', '15px', 'important');
+                    arrow.style.setProperty('margin-left', '10px', 'important');
                     arrow.style.setProperty('flex-shrink', '0', 'important');
                     arrow.style.setProperty('align-self', 'center', 'important');
                     
@@ -363,55 +367,44 @@
                 
                 const categoryNames = document.querySelectorAll('.category-name');
                 categoryNames.forEach(name => {
-                    name.style.setProperty('font-size', '1.4rem', 'important');
-                    name.style.setProperty('margin-bottom', '4px', 'important');
+                    name.style.setProperty('font-size', '1.2rem', 'important');
+                    name.style.setProperty('margin-bottom', '2px', 'important');
                     name.style.setProperty('text-align', 'left', 'important');
                     name.style.setProperty('font-weight', '600', 'important');
                 });
                 
                 const categoryDescriptions = document.querySelectorAll('.category-description');
                 categoryDescriptions.forEach(desc => {
-                    desc.style.setProperty('font-size', '0.85rem', 'important');
+                    desc.style.setProperty('font-size', '0.8rem', 'important');
                     desc.style.setProperty('line-height', '1.2', 'important');
                     desc.style.setProperty('text-align', 'left', 'important');
-                    desc.style.setProperty('margin-bottom', '6px', 'important');
+                    desc.style.setProperty('margin-bottom', '4px', 'important');
                     desc.style.setProperty('color', 'var(--text-secondary)', 'important');
-                });
-                
-                const categoryDetails = document.querySelectorAll('.category-details');
-                categoryDetails.forEach(detail => {
-                    detail.style.setProperty('font-size', '0.7rem', 'important');
-                    detail.style.setProperty('line-height', '1.2', 'important');
-                    detail.style.setProperty('text-align', 'left', 'important');
-                    detail.style.setProperty('margin-bottom', '8px', 'important');
-                    detail.style.setProperty('opacity', '0.8', 'important');
-                });
-                
-                const featureTags = document.querySelectorAll('.feature-tag');
-                featureTags.forEach(tag => {
-                    tag.style.setProperty('font-size', '0.6rem', 'important');
-                    tag.style.setProperty('padding', '2px 6px', 'important');
-                    tag.style.setProperty('margin', '1px 2px 1px 0', 'important');
-                });
-                
-                const categoryStats = document.querySelectorAll('.category-stats');
-                categoryStats.forEach(stat => {
-                    stat.style.setProperty('margin-bottom', '8px', 'important');
-                    stat.style.setProperty('gap', '12px', 'important');
-                });
-                
-                const stats = document.querySelectorAll('.stat');
-                stats.forEach(stat => {
-                    stat.style.setProperty('font-size', '0.7rem', 'important');
                 });
                 
                 const priceRanges = document.querySelectorAll('.category-price-range');
                 priceRanges.forEach(price => {
-                    price.style.setProperty('font-size', '0.9rem', 'important');
+                    price.style.setProperty('font-size', '0.85rem', 'important');
                     price.style.setProperty('margin-bottom', '0', 'important');
                     price.style.setProperty('text-align', 'left', 'important');
                     price.style.setProperty('font-weight', '600', 'important');
                     price.style.setProperty('color', 'var(--primary-color)', 'important');
+                });
+                
+                // Скрываем лишние элементы в мобильной версии
+                const categoryDetails = document.querySelectorAll('.category-details');
+                categoryDetails.forEach(detail => {
+                    detail.style.setProperty('display', 'none', 'important');
+                });
+                
+                const featureTags = document.querySelectorAll('.feature-tag');
+                featureTags.forEach(tag => {
+                    tag.style.setProperty('display', 'none', 'important');
+                });
+                
+                const categoryStats = document.querySelectorAll('.category-stats');
+                categoryStats.forEach(stat => {
+                    stat.style.setProperty('display', 'none', 'important');
                 });
             }
         }
